@@ -2,11 +2,12 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.web-title{
+.web-title {
     background: -webkit-linear-gradient(135deg, #007AFF, #00BFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+    font-size: 42px;
+    font-family: 'Viga', sans-serif;}
 
 .mascott {
     height: 480px;
@@ -14,8 +15,23 @@ body {
     top: -480px;
     left: 0px;
     scale: -1x;
-  }
-  
+}
+
+.mascott-2 {
+    height: 640px;
+    position: absolute;
+    top: -520px;
+    left:-80px;
+}
+
+@media screen and (max-width: 1600px){
+    .mascott-2 {
+        height: 570px;
+        left: -80px;
+        top: -460px;
+    }
+}
+
 .table-container table {
     width: 100%;
     border-collapse: collapse;
@@ -32,7 +48,7 @@ tr {
 
 }
 
-.table-container{
+.table-container {
     position: relative;
 }
 
@@ -55,46 +71,47 @@ tr {
     background: white;
 }
 
-.table-container tr td:nth-child(2){
+.table-container tr td:nth-child(2) {
     width: 20%;
 
 }
 
-.table-container tr td:nth-child(3){
-    width: 1    0%;
+.table-container tr td:nth-child(3) {
+    width: 1 0%;
 
 }
 
-.table-container tr td:last-child{
+.table-container tr td:last-child {
     width: 20%;
 }
 
 
 .table-container tr:hover {
-    background: rgb(230, 230, 255);
+    background: rgb(230, 243, 255);
 }
 
 .button {
     cursor: pointer;
     transition: ease-in-out 0.6s;
-    background: linear-gradient(135deg, #ffff, #ffff);;
+    background: linear-gradient(135deg, #ffff, #ffff);
+    ;
     color: rgb(77, 130, 252);
     padding: 8px;
     border-radius: 4px;
     border: 1px solid rgb(77, 130, 252);
 }
 
-.button:hover{
+.button:hover {
     background: linear-gradient(135deg, #007AFF, #00BFFF);
     color: white;
     border: 1px solid rgb(77, 130, 252);
 }
 
-.book-title{
+.book-title {
     font-size: large;
     font-weight: 600;
 }
 
-button{
+button {
     all: unset;
 }

@@ -24,5 +24,5 @@ async function getDataApi(url) {
 }
 (async function () {
     const tableContainer = document.getElementById('table-container');
-    tableContainer.innerHTML = await getDataApi("https://api.consumet.org/meta/anilist-manga/mahou%20shoujo");
+    tableContainer.innerHTML = await getDataApi("https://api.consumet.org/meta/anilist-manga/mahou%20shoujo%20madoka");
 }());
