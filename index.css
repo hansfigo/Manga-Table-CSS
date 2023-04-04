@@ -7,7 +7,16 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 42px;
-    font-family: 'Viga', sans-serif;}
+    font-family: 'Viga', sans-serif;
+}
+
+.web-title-emote{
+    font-size: 42px;
+}
+
+.hero-subtext{
+    text-align: right; font-size: 28px;
+}
 
 .mascott {
     height: 480px;
@@ -20,8 +29,13 @@ body {
 .mascott-2 {
     height: 640px;
     position: absolute;
-    top: -520px;
+    top: -510px;
     left:-80px;
+}
+
+.navbar-btn{
+    display: flex;
+     gap: 22px;
 }
 
 @media screen and (max-width: 1600px){
@@ -31,6 +45,54 @@ body {
         top: -460px;
     }
 }
+
+@media screen and (max-width: 720px){
+    .web-title {
+        background: -webkit-linear-gradient(135deg, #007AFF, #00BFFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 22px;
+        font-family: 'Viga', sans-serif;
+    }
+
+    .web-title-emote{
+        font-size: 22px;
+    }
+    
+    
+    .mascott-2 {
+        display: none;
+    }
+
+    .navbar-btn{
+       display: none;
+    }
+    .hero-subtext{
+        text-align: right; font-size: 18px;
+    }
+
+    .table-container {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1720px){
+    .mascott-2 {
+        height: 480px;
+        left: -320px;
+        top: -480px;
+        transform: rotate(90deg);
+    }
+
+    .hero-subtext{
+        text-align: right; font-size: 22px;
+    }
+    
+}
+
 
 .table-container table {
     width: 100%;
@@ -77,7 +139,7 @@ tr {
 }
 
 .table-container tr td:nth-child(3) {
-    width: 1 0%;
+    width: 10%;
 
 }
 
