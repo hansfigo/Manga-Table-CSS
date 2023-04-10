@@ -58,7 +58,7 @@ const students = [
     }
 ];
 function showStudentsInfo(data) {
-    let table = '<table class="P2">';
+    let table = '<table>';
     table += '<tr><th>id</th><th>Name</th><th>Grade 1</th><th>Grade 2</th><th>Grade 3</th></tr>';
     data.map((e) => {
         table += '<tr>';

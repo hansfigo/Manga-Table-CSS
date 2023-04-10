@@ -97,7 +97,7 @@ const students : Students[] = [
 
 function showStudentsInfo(data:Students[]) {
 
-    let table: string = '<table class="P2">';
+    let table: string = '<table>';
     table += '<tr><th>id</th><th>Name</th><th>Grade 1</th><th>Grade 2</th><th>Grade 3</th></tr>';
 
     data.map((e: Students) => {
