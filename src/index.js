@@ -26,3 +26,51 @@ async function getDataApi(url) {
     const tableContainer = document.getElementById('table-container');
     tableContainer.innerHTML = await getDataApi("https://api.consumet.org/meta/anilist-manga/mahou%20shoujo%20madoka");
 }());
+const students = [
+    {
+        name: "Madoka",
+        id: "22.12.2201",
+        grade: [90, 80, 80]
+    }, {
+        name: "Sayaka",
+        id: "23.01.2302",
+        grade: [85, 75, 90]
+    },
+    {
+        name: "Homura",
+        id: "24.02.2403",
+        grade: [95, 85, 90]
+    },
+    {
+        name: "Kyoko",
+        id: "25.03.2504",
+        grade: [80, 85, 95]
+    },
+    {
+        name: "Mami",
+        id: "26.04.2605",
+        grade: [90, 95, 85]
+    },
+    {
+        name: "Nagisa",
+        id: "27.05.2706",
+        grade: [85, 90, 80]
+    }
+];
+function showStudentsInfo(data) {
+    let table = '<table>';
+    table += '<tr><th>id</th><th>Name</th><th>Grade 1</th><th>Grade 2</th><th>Grade 3</th></tr>';
+    data.map((e) => {
+        table += '<tr>';
+        table += '<td>' + e.id + '</td>';
+        table += '<td>' + e.name + '</td>';
+        table += '<td>' + e.grade[0] + '</td>';
+        table += '<td>' + e.grade[1] + '</td>';
+        table += '<td>' + e.grade[2] + '</td>';
+        table += '</tr>';
+    });
+    table += '</table>';
+    return table;
+}
+const tablePraktikum2 = document.getElementById('tablePraktikum2');
+tablePraktikum2.innerHTML = showStudentsInfo(students);

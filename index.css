@@ -18,6 +18,12 @@ body {
     text-align: right; font-size: 28px;
 }
 
+.page-route a{
+    padding-bottom: 12px;
+    all: unset;
+    cursor: pointer;
+}
+
 .mascott {
     height: 480px;
     position: absolute;
